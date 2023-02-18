@@ -6,7 +6,7 @@ import { Menu, AccountCircle, Brightness4, Brightness7 } from '@mui/icons-materi
 import { useTheme } from '@mui/styles';
 
 import useStyle from './styles';
-import { Sidebar } from '..';
+import Sidebar from '../Sidebar/Sidebar';
 
 const NavBar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);

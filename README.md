@@ -6,4 +6,4 @@
   4. React Router Dom
   5. Redux ToolKit
 
-  
+# I'm using the movies database apis (IMDB)
