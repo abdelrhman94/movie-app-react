@@ -4,7 +4,14 @@ import { Route, Routes } from 'react-router-dom';
 
 import useStyles from './components/styles';
 
-import { Actors, MovieInformation, Movies, NavBar, Profile } from './components';
+import {
+  Actors,
+  MovieInformation,
+  Movies,
+  NavBar,
+  Profile,
+} from './components';
+import { ActorsPage, MovieInfoPage, MoviesPage, ProfilePage } from './pages';
 
 const App = () => {
   const classes = useStyles();
@@ -16,10 +23,10 @@ const App = () => {
       <main className={classes.content}>
         <div className={classes.toolbar} />
         <Routes>
-          <Route exact path="/movie/:id" element={<MovieInformation />} />
-          <Route path="/actors/:id" element={<Actors />} />
-          <Route exact path="/" element={<Movies />} />
-          <Route path="/profile/:id" element={<Profile />} />
+          <Route exact path="/movie/:id" element={<MovieInfoPage />} />
+          <Route path="/actors/:id" element={<ActorsPage />} />
+          <Route exact path="/" element={<MoviesPage />} />
+          <Route path="/profile/:id" element={<ProfilePage />} />
         </Routes>
       </main>
     </div>
